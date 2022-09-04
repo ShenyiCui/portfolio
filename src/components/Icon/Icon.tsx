@@ -27,6 +27,7 @@ import rails from '@/assets/icons/rails.svg';
 import ruby from '@/assets/icons/ruby.svg';
 import sequelize from '@/assets/icons/sequelize.svg';
 import swift from '@/assets/icons/swift.svg';
+import javascript from '@/assets/icons/javascript.svg';
 
 export enum IconType {
   Figma = 'Figma/Design',
@@ -45,9 +46,9 @@ export enum IconType {
   LinkedIn = 'LinkedIn',
   Email = 'Email',
   Resume = 'Resume',
-  AwsApiGateway = 'AwsApiGateway',
-  AwsDynamoDb = 'AwsDynamoDB',
-  AwsLambda = 'AwaLambda',
+  AwsApiGateway = 'ApiGateway',
+  AwsDynamoDb = 'DynamoDB',
+  AwsLambda = 'Lambda',
   ExpressJs = 'ExpressJs',
   Git = 'git',
   JQuery = 'jQuery',
@@ -56,6 +57,7 @@ export enum IconType {
   Ruby = 'Ruby',
   Sequelize = 'Sequelize',
   Swift = 'Swift',
+  JavaScript = 'JavaScript',
 }
 
 const IconImage = {
@@ -75,9 +77,9 @@ const IconImage = {
   LinkedIn: linkedin,
   Email: mail,
   Resume: resume,
-  AwsApiGateway: awsApiGateway,
-  AwsDynamoDB: awsDynamodb,
-  AwaLambda: awsLambda,
+  ApiGateway: awsApiGateway,
+  DynamoDB: awsDynamodb,
+  Lambda: awsLambda,
   ExpressJs: expressJs,
   git: git,
   jQuery: jquery,
@@ -86,6 +88,7 @@ const IconImage = {
   Ruby: ruby,
   Sequelize: sequelize,
   Swift: swift,
+  JavaScript: javascript,
 };
 
 export type IconObject = {

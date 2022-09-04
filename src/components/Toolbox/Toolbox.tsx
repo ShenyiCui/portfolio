@@ -1,35 +1,51 @@
 import React from 'react';
 
+import { ExpTech, ExpLanguage, FamTech, FamLanguage } from '@/data/toolbox';
+import Icon, { IconObject } from '@components/Icon';
+import getKey from '@/utilities/keyGenerator';
+
+const TechStackIcons = (icons: IconObject[][]) => {
+  return icons.map(iconArr => {
+    return (
+      <div key={getKey()} className='flex space-x-4 mb-10'>
+        {iconArr.map(icon => (
+          <Icon vSpace='mt-0' iconType={icon.iconType} key={getKey()} />
+        ))}
+      </div>
+    );
+  });
+};
+
 const Toolbox = () => {
   return (
-    <div className='overflow-hidden bg-white shadow-lg rounded-lg'>
+    <div className='overflow-hidden bg-white shadow-lg rounded-lg w-full'>
       <div className='px-4 py-5 sm:px-6'>
         <h3 className='font-montserrat text-xl font-bold leading-6 text-gray-900'>My Toolbox</h3>
-        <p className='font-inter mt-1 max-w-2xl text-sm text-gray-500'>Languages and Technologies/Frameworks</p>
+        <p className='font-inter mt-1 max-w-2xl text-sm text-gray-500'>Languages, Technologies and Frameworks</p>
       </div>
       <div className='border-t border-gray-200 px-4 py-5 sm:px-6 font-inter'>
         <dl className='grid grid-cols-1 gap-x-4 gap-y-1 sm:grid-cols-2'>
           <div className='sm:col-span-2'>
             <dt className='text-lg font-montserrat font-bold text-gray-900'>Languages</dt>
           </div>
-          <div className='sm:col-span-1 mb-6'>
-            <dt className='text-sm font-medium text-gray-500'>Full name</dt>
-            <dd className='mt-1 text-sm text-gray-900'>Margot Foster</dd>
+          <div className='sm:col-span-1 mb-1'>
+            <dt className='text-sm font-medium text-gray-500'>Experienced</dt>
+            <dd className='mt-1 text-sm text-gray-900'>{TechStackIcons(ExpLanguage)}</dd>
           </div>
-          <div className='sm:col-span-1 mb-6'>
-            <dt className='text-sm font-medium text-gray-500'>Application for</dt>
-            <dd className='mt-1 text-sm text-gray-900'>Backend Developer</dd>
+          <div className='sm:col-span-1 mb-1'>
+            <dt className='text-sm font-medium text-gray-500'>Familar</dt>
+            <dd className='mt-1 text-sm text-gray-900'>{TechStackIcons(FamLanguage)}</dd>
           </div>
           <div className='sm:col-span-2'>
             <dt className='text-lg font-montserrat font-bold text-gray-900'>Technologies</dt>
           </div>
-          <div className='sm:col-span-1 mb-6'>
-            <dt className='text-sm font-medium text-gray-500'>Email address</dt>
-            <dd className='mt-1 text-sm text-gray-900'>margotfoster@example.com</dd>
+          <div className='sm:col-span-1 mb-1'>
+            <dt className='text-sm font-medium text-gray-500'>Experienced</dt>
+            <dd className='mt-1 text-sm text-gray-900'>{TechStackIcons(ExpTech)}</dd>
           </div>
-          <div className='sm:col-span-1 mb-6'>
-            <dt className='text-sm font-medium text-gray-500'>Salary expectation</dt>
-            <dd className='mt-1 text-sm text-gray-900'>$120,000</dd>
+          <div className='sm:col-span-1 mb-1'>
+            <dt className='text-sm font-medium text-gray-500'>Familar</dt>
+            <dd className='mt-1 text-sm text-gray-900'>{TechStackIcons(FamTech)}</dd>
           </div>
         </dl>
       </div>

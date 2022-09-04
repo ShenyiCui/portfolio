@@ -9,7 +9,7 @@ const AboutMe = () => {
   return (
     <>
       <NavBar />
-      <div className='w-full flex justify-center md:mt-5'>
+      <div className='w-full flex justify-center mt-10 md:mt-5'>
         <div className='relative w-full max-w-7xl h-full grid grid-cols-1 md:grid-cols-2 px-5 md:px-12'>
           <div className='md:flex md:items-center'>
             <div>
@@ -18,11 +18,10 @@ const AboutMe = () => {
                 I&apos;m currently a 3rd year at the National University of Singapore, studying B.S. Computer Science and Statistics.
                 Looking for .......
               </p>
-              <ContactMe className='my-5' size='w-[32px] md:w-[45px]' />
+              <ContactMe className='mt-5 mb-16 md:my-5' size='w-[32px] md:w-[45px]' />
             </div>
           </div>
 
-          {/* Large Screen Portrait */}
           <div className='justify-center flex'>
             <Toolbox />
           </div>
