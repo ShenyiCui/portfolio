@@ -6,7 +6,8 @@ const tailwindTheme = {
     extend: {
       colors: {
         darkBlue: '#0756B4',
-        lightBlue: '#0756b480',
+        mediumBlue: '#0756b480',
+        lightBlue: '#EAF0F7',
       },
       fontFamily: {
         inter: ['inter', 'sans-serif'],

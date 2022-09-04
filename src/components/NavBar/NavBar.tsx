@@ -6,7 +6,7 @@ import Routes from '@/utilities/routes';
 const NavBar = () => {
   return (
     <header className=''>
-      <nav className='mx-auto px-5 md:px-12' aria-label='Top'>
+      <nav className='mx-auto px-5 md:px-12 max-w-7xl' aria-label='Top'>
         <div className='flex w-full items-center justify-between py-6'>
           <div className='flex items-center'>
             <NavLink to={Routes.home} className='font-montserrat font-bold text-xl md:text-3xl' href={Routes.home}>
