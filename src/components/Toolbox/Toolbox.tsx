@@ -9,7 +9,7 @@ const TechStackIcons = (icons: IconObject[][]) => {
     return (
       <div key={getKey()} className='flex space-x-4 mb-10'>
         {iconArr.map(icon => (
-          <Icon vSpace='mt-0' iconType={icon.iconType} key={getKey()} />
+          <Icon iconType={icon.iconType} key={getKey()} />
         ))}
       </div>
     );

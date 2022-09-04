@@ -108,7 +108,7 @@ const Icon = ({ iconType, link, vSpace, size = 'w-[32px]' }: IconObject) => {
       <div className='flex justify-center'>
         <img src={IconImage[iconType]} className={`m-0 ${size} `} />
       </div>
-      <div className={`hidden justify-center group-hover:flex ${vSpace ? vSpace : '-mt-2'}`}>
+      <div className={`hidden justify-center group-hover:flex ${vSpace ? vSpace : 'mt-0'}`}>
         <p className='text-[10px] text-black m-0'>{iconType}</p>
       </div>
     </div>

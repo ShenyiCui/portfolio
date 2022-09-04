@@ -2,29 +2,25 @@ import React from 'react';
 
 import NavBar from '@components/NavBar';
 import Footer from '@/components/Footer';
-import ContactMe from '@components/ContactMe';
-import Toolbox from '@components/Toolbox';
+import AboutMeIntro from '@components/AboutMe';
+import Experience from '@components/Experience';
+
+import { experience } from '@/data/experience';
+import getKey from '@/utilities/keyGenerator';
 
 const AboutMe = () => {
   return (
     <>
       <NavBar />
-      <div className='w-full flex justify-center mt-10 md:mt-5'>
-        <div className='relative w-full max-w-7xl h-full grid grid-cols-1 md:grid-cols-2 px-5 md:px-12'>
-          <div className='md:flex md:items-center'>
-            <div>
-              <h1 className='font-montserrat text-2xl font-bold md:text-3xl'>Nice to meet you!</h1>
-              <p className='font-inter text-base font-medium mt-5 md:text-xl'>
-                I&apos;m currently a 3rd year at the National University of Singapore, studying B.S. Computer Science and Statistics.
-                Looking for .......
-              </p>
-              <ContactMe className='mt-5 mb-16 md:my-5' size='w-[32px] md:w-[45px]' />
-            </div>
-          </div>
-
-          <div className='justify-center flex'>
-            <Toolbox />
-          </div>
+      <AboutMeIntro />
+      <div className='w-full flex justify-center my-20'>
+        <div className='flow-root w-full max-w-7xl px-5 md:px-12'>
+          <h1 className='font-bold font-montserrat text-3xl mb-10'>Experience</h1>
+          <ul role='list' className='-mb-8'>
+            {experience.map((event, eventIdx) => (
+              <Experience key={getKey()} event={event} eventIdx={eventIdx} eventLength={experience.length - 1} />
+            ))}
+          </ul>
         </div>
       </div>
       <Footer />
