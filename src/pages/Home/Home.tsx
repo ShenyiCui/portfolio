@@ -30,6 +30,7 @@ const Home = () => {
                 techStack={proj.techStack}
                 links={proj.links}
                 others={proj.others}
+                shields={proj.shields}
               />
             ))}
           </div>

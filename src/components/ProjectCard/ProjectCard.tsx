@@ -12,6 +12,7 @@ export type Project = {
   techStack: IconObject[];
   links: IconObject[];
   others?: LinkObject[];
+  shields?: string[];
 };
 
 const ProjectCard = (props: Project) => {
@@ -22,8 +23,11 @@ const ProjectCard = (props: Project) => {
         <div className='flex justify-center px-5 pb-2'>
           <img src={props.img} className='md:w-[500px] object-contain' />
         </div>
+
         <h3 className='text-2xl font-bold leading-6 text-gray-900 font-montserrat'>{props.title}</h3>
         <p className='mt-1 max-w-2xl text-sm text-gray-500 font-inter'>{props.duration}</p>
+
+        <div className='flex space-x-2 pt-2'>{props.shields && props.shields.map(shield => <img key={getKey()} src={shield} />)}</div>
       </div>
 
       {/* Body */}
