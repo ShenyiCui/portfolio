@@ -1,11 +1,7 @@
 import React from 'react';
 
 import { ArrowTopRightOnSquareIcon } from '@heroicons/react/20/solid';
-
-import ionic from '@/assets/icons/ionic.svg';
-import github from '@/assets/icons/github.svg';
-import figma from '@/assets/icons/figma.svg';
-import open from '@/assets/icons/open-in-new.svg';
+import Icon, { IconType } from '@components/Icon';
 
 const ProjectCard = () => {
   return (
@@ -27,44 +23,18 @@ const ProjectCard = () => {
           <div className='sm:col-span-1'>
             <dt className='text-sm font-medium text-gray-500'>Tech Stack</dt>
             <dd className='mt-1 flex space-x-3'>
-              <div className='w-8 grid grid-cols-1 h-5 group'>
-                <div className='flex justify-center'>
-                  <img src={ionic} style={{ width: 30 }} className='m-0' />
-                </div>
-                <div className='hidden justify-center -mt-2 group-hover:flex'>
-                  <p className='text-[10px] text-black m-0'>Ionic</p>
-                </div>
-              </div>
+              <Icon iconType={IconType.Ionic} />
+              <Icon iconType={IconType.TypeScript} />
+              <Icon iconType={IconType.PostgreSql} />
             </dd>
           </div>
 
           <div className='sm:col-span-1'>
             <dt className='text-sm font-medium text-gray-500'>Links</dt>
             <dd className='mt-1 flex space-x-3'>
-              <div className='w-8 grid grid-cols-1 h-5 group cursor-pointer'>
-                <div className='flex justify-center'>
-                  <img src={github} style={{ width: 30 }} className='m-0' />
-                </div>
-                <div className='hidden justify-center -mt-2 group-hover:flex'>
-                  <p className='text-[10px] text-black m-0'>Github</p>
-                </div>
-              </div>
-              <div className='w-8 grid grid-cols-1 h-5 group cursor-pointer'>
-                <div className='flex justify-center'>
-                  <img src={figma} style={{ width: 30 }} className='m-0' />
-                </div>
-                <div className='hidden justify-center -mt-2 group-hover:flex'>
-                  <p className='text-[10px] text-black m-0'>Design/Figma</p>
-                </div>
-              </div>
-              <div className='w-8 grid grid-cols-1 h-5 group cursor-pointer'>
-                <div className='flex justify-center'>
-                  <img src={open} style={{ width: 30 }} className='m-0' />
-                </div>
-                <div className='hidden justify-center -mt-2 group-hover:flex'>
-                  <p className='text-[10px] text-black m-0'>Visit</p>
-                </div>
-              </div>
+              <Icon iconType={IconType.Github} link='d' />
+              <Icon iconType={IconType.Figma} link='d' />
+              <Icon iconType={IconType.OpenNew} link='d' />
             </dd>
           </div>
 
