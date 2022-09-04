@@ -4,7 +4,7 @@ import portrait from '@/assets/images/portrait.svg';
 
 const Introduction = () => {
   return (
-    <div className='w-full flex justify-center'>
+    <div className='w-full flex justify-center mb-[290px]'>
       {/* Small Screen Portrait */}
       <div className='relative w-full max-w-7xl h-full grid grid-cols-1 md:grid-cols-2 px-5 md:px-12'>
         <div className='flex justify-center md:hidden'>
