@@ -18,7 +18,7 @@ const NavBar = () => {
               exact
               to={Routes.home}
               className='font-montserrat font-semibold text-base md:text-xl'
-              activeClassName='underline underline-offset-8 decoration-[3px] decoration-darkBlue'
+              activeClassName='underline underline-offset-8 decoration-[2px] decoration-darkBlue md:decoration-[3px]'
               href={Routes.home}
             >
               Projects
@@ -27,7 +27,7 @@ const NavBar = () => {
               exact
               to={Routes.aboutMe}
               className='font-montserrat font-semibold text-base md:text-xl'
-              activeClassName='underline underline-offset-8 decoration-[3px] decoration-darkBlue'
+              activeClassName='underline underline-offset-8 decoration-[2px] decoration-darkBlue md:decoration-[3px]'
               href={Routes.aboutMe}
             >
               About Me
