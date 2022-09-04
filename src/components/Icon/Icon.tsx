@@ -13,6 +13,9 @@ import tailwind from '@/assets/icons/tailwind-css.svg';
 import tensorFlow from '@/assets/icons/tensor-flow.svg';
 import typescript from '@/assets/icons/typescript.svg';
 import openNew from '@/assets/icons/open-in-new.svg';
+import linkedin from '@/assets/icons/linkedin.svg';
+import mail from '@/assets/icons/mail.svg';
+import resume from '@/assets/icons/resume.svg';
 
 export enum IconType {
   Figma = 'Figma/Design',
@@ -28,6 +31,9 @@ export enum IconType {
   TensorFlow = 'TensorFlow',
   TypeScript = 'TypeScript',
   OpenNew = 'Visit',
+  LinkedIn = 'LinkedIn',
+  Email = 'Email',
+  Resume = 'Resume',
 }
 
 const IconImage = {
@@ -44,24 +50,28 @@ const IconImage = {
   TensorFlow: tensorFlow,
   TypeScript: typescript,
   Visit: openNew,
+  LinkedIn: linkedin,
+  Email: mail,
+  Resume: resume,
 };
 
 export type IconObject = {
   iconType: IconType;
   link?: string;
+  vSpace?: string;
 };
 
 const openLink = (link: string) => {
   window.open(link, '_blank');
 };
 
-const Icon = ({ iconType, link }: IconObject) => {
+const Icon = ({ iconType, link, vSpace }: IconObject) => {
   return (
     <div onClick={() => link && openLink(link)} className={`w-8 grid grid-cols-1 h-5 group ${link && 'cursor-pointer'}`}>
       <div className='flex justify-center'>
         <img src={IconImage[iconType]} style={{ width: 30 }} className='m-0' />
       </div>
-      <div className='hidden justify-center -mt-2 group-hover:flex'>
+      <div className={`hidden justify-center group-hover:flex ${vSpace ? vSpace : '-mt-2'}`}>
         <p className='text-[10px] text-black m-0'>{iconType}</p>
       </div>
     </div>

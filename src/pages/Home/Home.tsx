@@ -3,6 +3,7 @@ import React from 'react';
 import NavBar from '@components/NavBar';
 import Introduction from '@components/Introduction';
 import ProjectCard from '@components/ProjectCard';
+import Footer from '@components/Footer';
 
 import getKey from '@/utilities/keyGenerator';
 import { allProjects } from '@/data/projectCards';
@@ -38,6 +39,7 @@ const Home = () => {
         </div>
       </div>
       {/* FOOTER */}
+      <Footer />
     </>
   );
 };

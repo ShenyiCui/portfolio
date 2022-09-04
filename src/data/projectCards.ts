@@ -26,9 +26,9 @@ export const allProjects: Project[] = [
       { title: "Singapore Airlines' App Challenge 2022", link: 'https://appchallenge.singaporeair.com/en/challenges/students-2022' },
     ],
     shields: [
-      'https://img.shields.io/badge/-International%20%F0%9F%8C%8E-9cf',
+      'https://img.shields.io/badge/-International%20%F0%9F%8C%8E-informational',
       'https://img.shields.io/badge/-Winner%20%F0%9F%8F%86-yellow',
-      'https://img.shields.io/badge/-1st%20Place-success',
+      'https://img.shields.io/badge/-1st%20Place%F0%9F%A5%87%20-Success',
     ],
   },
 ];
