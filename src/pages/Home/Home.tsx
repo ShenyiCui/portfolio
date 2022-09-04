@@ -10,6 +10,7 @@ import { allProjects } from '@/data/projectCards';
 const Home = () => {
   return (
     <>
+      {/* HEADER */}
       <NavBar />
       <div className='w-full h-full'>
         <Introduction />
@@ -36,6 +37,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      {/* FOOTER */}
     </>
   );
 };
