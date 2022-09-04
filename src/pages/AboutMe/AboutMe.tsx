@@ -3,12 +3,13 @@ import React from 'react';
 import NavBar from '@components/NavBar';
 import Footer from '@/components/Footer';
 import ContactMe from '@components/ContactMe';
+import Toolbox from '@components/Toolbox';
 
 const AboutMe = () => {
   return (
     <>
       <NavBar />
-      <div className='w-full flex justify-center'>
+      <div className='w-full flex justify-center md:mt-5'>
         <div className='relative w-full max-w-7xl h-full grid grid-cols-1 md:grid-cols-2 px-5 md:px-12'>
           <div className='md:flex md:items-center'>
             <div>
@@ -23,7 +24,7 @@ const AboutMe = () => {
 
           {/* Large Screen Portrait */}
           <div className='justify-center flex'>
-            <div className='relative rounded-full w-60 h-60 my-5 bg-lightBlue md:w-96 md:h-96'></div>
+            <Toolbox />
           </div>
         </div>
       </div>
