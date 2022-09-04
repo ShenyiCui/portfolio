@@ -46,7 +46,7 @@ const IconImage = {
   Visit: openNew,
 };
 
-type Props = {
+export type IconObject = {
   iconType: IconType;
   link?: string;
 };
@@ -55,7 +55,7 @@ const openLink = (link: string) => {
   window.open(link, '_blank');
 };
 
-const Icon = ({ iconType, link }: Props) => {
+const Icon = ({ iconType, link }: IconObject) => {
   return (
     <div onClick={() => link && openLink(link)} className={`w-8 grid grid-cols-1 h-5 group ${link && 'cursor-pointer'}`}>
       <div className='flex justify-center'>
