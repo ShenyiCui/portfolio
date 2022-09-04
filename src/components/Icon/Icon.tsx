@@ -92,22 +92,18 @@ export type IconObject = {
   iconType: IconType;
   link?: string;
   vSpace?: string;
-  size?: number;
-  sizeMd?: number;
+  size?: string;
 };
 
 const openLink = (link: string) => {
   window.open(link, '_blank');
 };
 
-const Icon = ({ iconType, link, vSpace, size = 32, sizeMd = 32 }: IconObject) => {
+const Icon = ({ iconType, link, vSpace, size = 'w-[32px]' }: IconObject) => {
   return (
-    <div
-      onClick={() => link && openLink(link)}
-      className={`w-[${size}px] md:w-[${sizeMd}px] grid grid-cols-1 h-5 group ${link && 'cursor-pointer'}`}
-    >
+    <div onClick={() => link && openLink(link)} className={`${size} grid grid-cols-1 h-5 group ${link && 'cursor-pointer'}`}>
       <div className='flex justify-center'>
-        <img src={IconImage[iconType]} className={`m-0 w-[${size}px] md:w-[${sizeMd}px]`} />
+        <img src={IconImage[iconType]} className={`m-0 ${size} `} />
       </div>
       <div className={`hidden justify-center group-hover:flex ${vSpace ? vSpace : '-mt-2'}`}>
         <p className='text-[10px] text-black m-0'>{iconType}</p>

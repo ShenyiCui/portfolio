@@ -18,7 +18,7 @@ const AboutMe = () => {
                 I&apos;m currently a 3rd year at the National University of Singapore, studying B.S. Computer Science and Statistics.
                 Looking for .......
               </p>
-              <ContactMe className='my-5' sizeMd={45} />
+              <ContactMe className='my-5' size='w-[32px] md:w-[45px]' />
             </div>
           </div>
 

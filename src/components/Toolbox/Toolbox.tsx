@@ -12,22 +12,22 @@ const Toolbox = () => {
           <div className='sm:col-span-2'>
             <dt className='text-lg font-montserrat font-bold text-gray-900'>Languages</dt>
           </div>
-          <div className='sm:col-span-1 mb-8'>
+          <div className='sm:col-span-1 mb-6'>
             <dt className='text-sm font-medium text-gray-500'>Full name</dt>
             <dd className='mt-1 text-sm text-gray-900'>Margot Foster</dd>
           </div>
-          <div className='sm:col-span-1 mb-8'>
+          <div className='sm:col-span-1 mb-6'>
             <dt className='text-sm font-medium text-gray-500'>Application for</dt>
             <dd className='mt-1 text-sm text-gray-900'>Backend Developer</dd>
           </div>
           <div className='sm:col-span-2'>
             <dt className='text-lg font-montserrat font-bold text-gray-900'>Technologies</dt>
           </div>
-          <div className='sm:col-span-1 mb-8'>
+          <div className='sm:col-span-1 mb-6'>
             <dt className='text-sm font-medium text-gray-500'>Email address</dt>
             <dd className='mt-1 text-sm text-gray-900'>margotfoster@example.com</dd>
           </div>
-          <div className='sm:col-span-1 mb-8'>
+          <div className='sm:col-span-1 mb-6'>
             <dt className='text-sm font-medium text-gray-500'>Salary expectation</dt>
             <dd className='mt-1 text-sm text-gray-900'>$120,000</dd>
           </div>
