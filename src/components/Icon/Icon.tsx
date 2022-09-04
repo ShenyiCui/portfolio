@@ -16,6 +16,17 @@ import openNew from '@/assets/icons/open-in-new.svg';
 import linkedin from '@/assets/icons/linkedin.svg';
 import mail from '@/assets/icons/mail.svg';
 import resume from '@/assets/icons/resume.svg';
+import awsApiGateway from '@/assets/icons/aws-api-gateway.svg';
+import awsLambda from '@/assets/icons/aws-lambda-1.svg';
+import awsDynamodb from '@/assets/icons/aws-dynamodb.svg';
+import expressJs from '@/assets/icons/express.svg';
+import git from '@/assets/icons/git.svg';
+import jquery from '@/assets/icons/jquery.svg';
+import r from '@/assets/icons/r.svg';
+import rails from '@/assets/icons/rails.svg';
+import ruby from '@/assets/icons/ruby.svg';
+import sequelize from '@/assets/icons/sequelize.svg';
+import swift from '@/assets/icons/swift.svg';
 
 export enum IconType {
   Figma = 'Figma/Design',
@@ -34,6 +45,17 @@ export enum IconType {
   LinkedIn = 'LinkedIn',
   Email = 'Email',
   Resume = 'Resume',
+  AwsApiGateway = 'AwsApiGateway',
+  AwsDynamoDb = 'AwsDynamoDB',
+  AwsLambda = 'AwaLambda',
+  ExpressJs = 'ExpressJs',
+  Git = 'git',
+  JQuery = 'jQuery',
+  R = 'R',
+  Rails = 'Rails',
+  Ruby = 'Ruby',
+  Sequelize = 'Sequelize',
+  Swift = 'Swift',
 }
 
 const IconImage = {
@@ -53,6 +75,17 @@ const IconImage = {
   LinkedIn: linkedin,
   Email: mail,
   Resume: resume,
+  AwsApiGateway: awsApiGateway,
+  AwsDynamoDB: awsDynamodb,
+  AwaLambda: awsLambda,
+  ExpressJs: expressJs,
+  git: git,
+  jQuery: jquery,
+  R: r,
+  Rails: rails,
+  Ruby: ruby,
+  Sequelize: sequelize,
+  Swift: swift,
 };
 
 export type IconObject = {
