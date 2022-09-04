@@ -1,7 +1,8 @@
 import React from 'react';
+import AppRouter from '@components/AppRouter';
 
-function App() {
-  return <h1 className='text-3xl font-bold underline text-black'>Hello world!</h1>;
-}
+const App = () => {
+  return <AppRouter />;
+};
 
 export default App;
