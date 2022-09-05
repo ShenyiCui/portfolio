@@ -3,7 +3,15 @@ import { IconObject, IconType } from '@components/Icon';
 export const ExpLanguage: IconObject[][] = [
   [{ iconType: IconType.JavaScript }, { iconType: IconType.TypeScript }, { iconType: IconType.Java }, { iconType: IconType.Ruby }],
 ];
-export const FamLanguage: IconObject[][] = [[{ iconType: IconType.Python }, { iconType: IconType.Swift }, { iconType: IconType.R }]];
+export const FamLanguage: IconObject[][] = [
+  [
+    { iconType: IconType.Python },
+    { iconType: IconType.Swift },
+    { iconType: IconType.R },
+    { iconType: IconType.Elixir },
+    { iconType: IconType.Erlang },
+  ],
+];
 
 export const ExpTech: IconObject[][] = [
   [
@@ -23,5 +31,5 @@ export const ExpTech: IconObject[][] = [
   [{ iconType: IconType.ExpressJs }],
 ];
 export const FamTech: IconObject[][] = [
-  [{ iconType: IconType.AwsApiGateway }, { iconType: IconType.AwsDynamoDb }, { iconType: IconType.AwsLambda }],
+  [{ iconType: IconType.AwsApiGateway }, { iconType: IconType.AwsDynamoDb }, { iconType: IconType.AwsLambda }, { iconType: IconType.Ecto }],
 ];
