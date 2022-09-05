@@ -11,8 +11,8 @@ const AboutMe = () => {
           <div>
             <h1 className='font-montserrat text-2xl font-bold md:text-3xl'>Nice to meet you!</h1>
             <p className='font-inter text-base font-medium mt-5 md:text-xl'>
-              I&apos;m currently a 3rd year at the National University of Singapore, studying B.S. Computer Science and Statistics. Looking
-              for .......
+              I&apos;m currently a 2nd year at the National University of Singapore, studying B.S. Computer Science and Statistics. Looking
+              for an internship in the summer of 2023.
             </p>
             <ContactMe className='mt-5 mb-16 md:my-5' size='w-[32px] md:w-[45px]' />
           </div>
