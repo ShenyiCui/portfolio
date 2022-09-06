@@ -171,7 +171,7 @@ export const otherProjects: Project[] = [
   },
   {
     title: 'DATA HASH VERIFICATION',
-    duration: 'MAR 2022',
+    duration: 'MAR 2021',
     description:
       'The purpose of this program is to ensure that data integrity is maintained during data transfer.\n' +
       "It's a windows AutoIt script (compiled .exe) that will recursively hash every file in a given root directory. Generates a comparable Hash Log.",
