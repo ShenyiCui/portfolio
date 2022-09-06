@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { SVGProps, useState } from 'react';
 
 import NavBar from '@components/NavBar';
 import Introduction from '@components/Introduction';
@@ -11,6 +11,15 @@ import { allProjects } from '@/data/projectCards';
 import { EyeIcon, EyeSlashIcon } from '@heroicons/react/20/solid';
 
 const Home = () => {
+  const [viewMoreIcon, setViewMoreIcon] = useState<(props: SVGProps<SVGSVGElement>) => JSX.Element>(() => EyeIcon);
+  const [isViewAll, setIsViewAll] = useState<boolean>(false);
+  const [viewAllText, setViewAllText] = useState<string>('View More');
+
+  const handleViewAll = () => {
+    setViewMoreIcon(isViewAll ? () => EyeIcon : () => EyeSlashIcon);
+    setViewAllText(isViewAll ? 'View More' : 'Hide');
+    setIsViewAll(!isViewAll);
+  };
   return (
     <>
       {/* HEADER */}
@@ -38,7 +47,22 @@ const Home = () => {
               />
             ))}
 
-            <DividerWithButton icon={EyeIcon} title='View More' onClick={() => ''} />
+            <DividerWithButton icon={viewMoreIcon} title={viewAllText} onClick={handleViewAll} />
+
+            {isViewAll &&
+              allProjects.map(proj => (
+                <ProjectCard
+                  key={getKey()}
+                  title={proj.title}
+                  img={proj.img}
+                  duration={proj.duration}
+                  description={proj.description}
+                  techStack={proj.techStack}
+                  links={proj.links}
+                  others={proj.others}
+                  shields={proj.shields}
+                />
+              ))}
           </div>
         </div>
       </div>
