@@ -37,7 +37,7 @@ const Experience = ({ event, eventIdx, eventLength }: Prop) => {
           </div>
           <div className='flex min-w-0 flex-1 justify-between space-x-4'>
             <ul role='list' className='space-y-3 w-full'>
-              <li className='overflow-hidden rounded-md bg-white px-6 py-4 shadow'>
+              <li className='overflow-hidden rounded-md bg-white px-6 py-4 shadow max-w-3xl'>
                 <div>
                   <h1 className='font-medium font-montserrat text-xl'>
                     {event.jobTitle} <label className='text-darkBlue'>@{event.location}</label>
