@@ -31,6 +31,8 @@ import javascript from '@/assets/icons/javascript.svg';
 import ecto from '@/assets/icons/ecto.svg';
 import elixir from '@/assets/icons/elixir-lang-icon.svg';
 import erlang from '@/assets/icons/erlang-icon.svg';
+import pytorch from '@/assets/icons/pytorch-icon.svg';
+import devpost from '@/assets/icons/devpost.svg';
 
 export enum IconType {
   Figma = 'Figma/Design',
@@ -64,6 +66,8 @@ export enum IconType {
   Ecto = 'Ecto',
   Elixir = 'Elixir',
   Erlang = 'Erlang',
+  PyTorch = 'PyTorch',
+  DevPost = 'DevPost',
 }
 
 const IconImage = {
@@ -98,6 +102,8 @@ const IconImage = {
   Ecto: ecto,
   Elixir: elixir,
   Erlang: erlang,
+  PyTorch: pytorch,
+  DevPost: devpost,
 };
 
 export type IconObject = {

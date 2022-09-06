@@ -26,8 +26,8 @@ export type Project = {
 
 const ProjectCard = (props: Project) => {
   return (
-    <div className='overflow-hidden shadow-lg bg-white border rounded-lg my-5 w-full flex justify-center'>
-      <div className='max-w-3xl'>
+    <div className='overflow-hidden bg-white my-5 w-full flex justify-center'>
+      <div className='max-w-3xl border rounded-lg shadow-lg'>
         {/* Header */}
         <div className='px-4 py-5 sm:px-6'>
           <div className='flex justify-center px-5 pb-2'>
@@ -62,7 +62,7 @@ const ProjectCard = (props: Project) => {
             </div>
 
             {/* Links */}
-            <div className='sm:col-span-1'>
+            <div className={`sm:col-span-1 ${!props.others && 'mb-3'}`}>
               <dt className='text-sm font-medium text-gray-500'>Links</dt>
               <dd className='mt-1 flex space-x-3'>
                 {props.links.map(icon => (
@@ -72,14 +72,18 @@ const ProjectCard = (props: Project) => {
             </div>
 
             {/* Others */}
-            <div className='sm:col-span-2'>
-              <dt className='text-sm font-medium text-gray-500'>Other</dt>
-              <dd className='mt-1 text-sm text-gray-900'>
-                <ul role='list' className='divide-y divide-gray-200 rounded-md border border-gray-200'>
-                  {props.others && props.others.map(link => <OtherLink title={link.title} link={link.link} key={getKey()} />)}
-                </ul>
-              </dd>
-            </div>
+            {props.others && (
+              <div className='sm:col-span-2'>
+                <dt className='text-sm font-medium text-gray-500'>Other</dt>
+                <dd className='mt-1 text-sm text-gray-900'>
+                  <ul role='list' className='divide-y divide-gray-200 rounded-md border border-gray-200'>
+                    {props.others.map(link => (
+                      <OtherLink title={link.title} link={link.link} key={getKey()} />
+                    ))}
+                  </ul>
+                </dd>
+              </div>
+            )}
           </dl>
         </div>
       </div>
