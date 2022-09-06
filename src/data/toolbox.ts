@@ -11,6 +11,7 @@ export const FamLanguage: IconObject[][] = [
     { iconType: IconType.Elixir },
     { iconType: IconType.Erlang },
   ],
+  [{ iconType: IconType.AutoIt }],
 ];
 
 export const ExpTech: IconObject[][] = [

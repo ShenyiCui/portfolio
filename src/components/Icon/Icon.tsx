@@ -34,6 +34,7 @@ import erlang from '@/assets/icons/erlang-icon.svg';
 import pytorch from '@/assets/icons/pytorch-icon.svg';
 import devpost from '@/assets/icons/devpost.svg';
 import materialui from '@/assets/icons/material-ui.svg';
+import autoit from '@/assets/icons/autoit.svg';
 
 export enum IconType {
   Figma = 'Figma/Design',
@@ -70,6 +71,7 @@ export enum IconType {
   PyTorch = 'PyTorch',
   DevPost = 'DevPost',
   MaterialUI = 'MaterialUI',
+  AutoIt = 'AutoIt',
 }
 
 const IconImage = {
@@ -107,6 +109,7 @@ const IconImage = {
   PyTorch: pytorch,
   DevPost: devpost,
   MaterialUI: materialui,
+  AutoIt: autoit,
 };
 
 export type IconObject = {

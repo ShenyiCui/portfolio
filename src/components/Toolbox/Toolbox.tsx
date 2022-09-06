@@ -7,7 +7,7 @@ import getKey from '@/utilities/keyGenerator';
 const TechStackIcons = (icons: IconObject[][]) => {
   return icons.map(iconArr => {
     return (
-      <div key={getKey()} className='flex space-x-4 mb-10'>
+      <div key={getKey()} className='flex space-x-4 mb-8'>
         {iconArr.map(icon => (
           <Icon iconType={icon.iconType} key={getKey()} />
         ))}
