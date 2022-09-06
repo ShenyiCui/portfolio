@@ -14,13 +14,15 @@ export const allProjects: Project[] = [
       'Empowered by machine learning, the user can scan any household object. Recyclops will inform them if it is safe to recycle, how to recycle it and whether any special instructions are needed. It also serves as an information dashboard of articles so users can access them easily to learn more.',
 
     techStack: [
-      { iconType: IconType.Ionic },
-      { iconType: IconType.React },
-      { iconType: IconType.Redux },
-      { iconType: IconType.TypeScript },
-      { iconType: IconType.Tailwind },
-      { iconType: IconType.Python },
-      { iconType: IconType.PyTorch },
+      [
+        { iconType: IconType.Ionic },
+        { iconType: IconType.React },
+        { iconType: IconType.Redux },
+        { iconType: IconType.TypeScript },
+        { iconType: IconType.Tailwind },
+        { iconType: IconType.Python },
+        { iconType: IconType.PyTorch },
+      ],
     ],
     links: [
       { iconType: IconType.Github, link: 'https://github.com/Recyclops-LifeHack-2022-Singapore' },
@@ -43,13 +45,16 @@ export const allProjects: Project[] = [
       'Dulwich is a School with many branches worldwide, teaching students from kindergarten to high school. There are many valuable and highly contested resources around all Dulwich schools with no proper solution to manage them.' +
       '\nDulwich Bookings is the 3rd iteration of solutions that allows staff to dynamically create resources for students and teachers to book.',
     techStack: [
-      { iconType: IconType.React },
-      { iconType: IconType.Redux },
-      { iconType: IconType.TypeScript },
-      { iconType: IconType.Tailwind },
-      { iconType: IconType.Sequelize },
-      { iconType: IconType.PostgreSql },
-      { iconType: IconType.ExpressJs },
+      [
+        { iconType: IconType.MaterialUI },
+        { iconType: IconType.React },
+        { iconType: IconType.Redux },
+        { iconType: IconType.TypeScript },
+        { iconType: IconType.Tailwind },
+        { iconType: IconType.Sequelize },
+        { iconType: IconType.PostgreSql },
+      ],
+      [{ iconType: IconType.NodeJs }, { iconType: IconType.ExpressJs }],
     ],
     links: [
       { iconType: IconType.Github, link: 'https://github.com/Dulwich-Bookings' },
@@ -67,13 +72,15 @@ export const allProjects: Project[] = [
       'The project used TensorFlow Recommenders A.I., which considers user profiles and preferences to recommend activities, accommodations and other ancillary services to users post flight booking.\n' +
       'Our solution was served directly to the users with a friendly Progressive Web Application (PWA).',
     techStack: [
-      { iconType: IconType.Ionic },
-      { iconType: IconType.React },
-      { iconType: IconType.Redux },
-      { iconType: IconType.TypeScript },
-      { iconType: IconType.Tailwind },
-      { iconType: IconType.Python },
-      { iconType: IconType.TensorFlow },
+      [
+        { iconType: IconType.Ionic },
+        { iconType: IconType.React },
+        { iconType: IconType.Redux },
+        { iconType: IconType.TypeScript },
+        { iconType: IconType.Tailwind },
+        { iconType: IconType.Python },
+        { iconType: IconType.TensorFlow },
+      ],
     ],
     links: [
       { iconType: IconType.Github, link: 'https://github.com/SEAT-SIA-AppChallenge-2022' },

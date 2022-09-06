@@ -18,7 +18,7 @@ export type Project = {
   title: string;
   duration: string;
   description: string;
-  techStack: IconObject[];
+  techStack: IconObject[][];
   links: IconObject[];
   others?: LinkObject[];
   shields?: string[];
@@ -54,11 +54,15 @@ const ProjectCard = (props: Project) => {
             {/* Tech Stack */}
             <div className='sm:col-span-1'>
               <dt className='text-sm font-medium text-gray-500'>Tech Stack</dt>
-              <dd className='mt-1 flex space-x-3'>
-                {props.techStack.map(icon => (
-                  <Icon iconType={icon.iconType} key={getKey()} />
-                ))}
-              </dd>
+              {props.techStack.map(techStackArr => {
+                return (
+                  <dd key={getKey()} className='mt-1 flex space-x-3 mb-5'>
+                    {techStackArr.map(icon => (
+                      <Icon iconType={icon.iconType} key={getKey()} />
+                    ))}
+                  </dd>
+                );
+              })}
             </div>
 
             {/* Links */}
