@@ -89,13 +89,7 @@ export const allProjects: Project[] = [
       { iconType: IconType.Figma, link: 'https://www.figma.com/file/KquZZhJXFo5KU2P0QKsDtP/SIA-App-Challenge?node-id=300%3A1423' },
       { iconType: IconType.OpenNew, link: 'https://seat-scoot.netlify.app/' },
     ],
-    others: [
-      { title: "About SIA's App Challenge 2022", link: 'https://appchallenge.singaporeair.com/en/challenges/students-2022' },
-      {
-        title: 'Pitch Deck',
-        link: 'https://docs.google.com/presentation/d/1HW91k4r-ZaOShPsBqMtiTbxw2JdhiOSq/edit?usp=sharing&ouid=115820071014171225546&rtpof=true&sd=true',
-      },
-    ],
+    others: [{ title: "About SIA's App Challenge 2022", link: 'https://appchallenge.singaporeair.com/en/challenges/students-2022' }],
     shields: [
       'https://img.shields.io/badge/-International%20%F0%9F%8C%8E-informational',
       'https://img.shields.io/badge/-Winner%20%F0%9F%8F%86-yellow',

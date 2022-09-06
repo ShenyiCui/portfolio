@@ -54,7 +54,7 @@ export const experience: Event[] = [
     blurb: 'Source Academy is a site used to teach first-year Computer Science students basic programming concepts.',
     points: [
       'Optimized the backend query for experience points using SQL with Ecto in Elixir.',
-      'Enhanced the aesthetics and utility of the achievement module in the frontend by displaying tutor feedback',
+      'Enhanced the aesthetics and utility of the achievement module in the frontend by displaying tutor feedback.',
     ],
     duration: 'Jan 2022 - Aug 2022',
     icon: PlusIcon,
