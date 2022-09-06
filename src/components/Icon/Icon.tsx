@@ -33,6 +33,7 @@ import elixir from '@/assets/icons/elixir-lang-icon.svg';
 import erlang from '@/assets/icons/erlang-icon.svg';
 import pytorch from '@/assets/icons/pytorch-icon.svg';
 import devpost from '@/assets/icons/devpost.svg';
+import materialui from '@/assets/icons/material-ui.svg';
 
 export enum IconType {
   Figma = 'Figma/Design',
@@ -68,6 +69,7 @@ export enum IconType {
   Erlang = 'Erlang',
   PyTorch = 'PyTorch',
   DevPost = 'DevPost',
+  MaterialUI = 'MaterialUI',
 }
 
 const IconImage = {
@@ -104,6 +106,7 @@ const IconImage = {
   Erlang: erlang,
   PyTorch: pytorch,
   DevPost: devpost,
+  MaterialUI: materialui,
 };
 
 export type IconObject = {
