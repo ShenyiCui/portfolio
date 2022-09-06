@@ -4,9 +4,11 @@ import NavBar from '@components/NavBar';
 import Introduction from '@components/Introduction';
 import ProjectCard from '@components/ProjectCard';
 import Footer from '@components/Footer';
+import DividerWithButton from '@components/DividerWithButton';
 
 import getKey from '@/utilities/keyGenerator';
 import { allProjects } from '@/data/projectCards';
+import { EyeIcon, EyeSlashIcon } from '@heroicons/react/20/solid';
 
 const Home = () => {
   return (
@@ -35,6 +37,8 @@ const Home = () => {
                 shields={proj.shields}
               />
             ))}
+
+            <DividerWithButton icon={EyeIcon} title='View More' onClick={() => ''} />
           </div>
         </div>
       </div>
