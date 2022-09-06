@@ -7,7 +7,7 @@ import Footer from '@components/Footer';
 import DividerWithButton from '@components/DividerWithButton';
 
 import getKey from '@/utilities/keyGenerator';
-import { allProjects } from '@/data/projectCards';
+import { allProjects, otherProjects } from '@/data/projectCards';
 import { EyeIcon, EyeSlashIcon } from '@heroicons/react/20/solid';
 
 const Home = () => {
@@ -50,7 +50,7 @@ const Home = () => {
             <DividerWithButton icon={viewMoreIcon} title={viewAllText} onClick={handleViewAll} />
 
             {isViewAll &&
-              allProjects.map(proj => (
+              otherProjects.map(proj => (
                 <ProjectCard
                   key={getKey()}
                   title={proj.title}
