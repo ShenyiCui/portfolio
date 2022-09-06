@@ -6,7 +6,7 @@ import getKey from '@/utilities/keyGenerator';
 
 const NewlineText = (text: string) => {
   const newText = text.split('\n').map(str => (
-    <p className='mb-3 text-justify' key={getKey()}>
+    <p className='mb-3' key={getKey()}>
       {str}
     </p>
   ));
