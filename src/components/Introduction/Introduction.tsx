@@ -18,10 +18,11 @@ const Introduction = () => {
         <div className='md:flex md:items-center'>
           <div>
             <h1 className='font-montserrat text-2xl font-bold md:text-3xl'>
-              Hi! <img className='inline w-8 mb-3' src={wave} /> I&apos;m Shen Yi, an aspiring developer.
+              Hi! <img className='inline w-6 mb-2' src={wave} /> I&apos;m Shen Yi, an aspiring developer.
             </h1>
             <p className='font-inter text-base font-medium mt-5 md:text-xl'>
-              I’m a passionate and inquisitive Computer Science Undergraduate with an international background that spans across Asia.{' '}
+              I’m a passionate and inquisitive <br /> Computer Science Undergraduate with an international background that spans across
+              Asia.{' '}
               <a className='text-darkBlue' href={Routes.aboutMe}>
                 Find out more...
               </a>
