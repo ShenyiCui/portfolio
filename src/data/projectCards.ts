@@ -67,7 +67,7 @@ export const allProjects: Project[] = [
   },
   {
     title: 'SCOOT - REIMAGINED',
-    img: 'https://user-images.githubusercontent.com/29945147/187409070-f1e8291f-c127-4e2c-977c-6bf6f64e7a41.png',
+    img: 'https://user-images.githubusercontent.com/29945147/188915459-81a963ea-9417-4a74-a299-81dc6b401344.png',
     duration: 'AUG 2022 - SEP 2022',
     description:
       'The Singapore Airlines (SIA) App Challenge is an annual global hackathon to find innovative solutions to real-life industry challenges.\n' +
