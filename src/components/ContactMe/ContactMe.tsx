@@ -16,7 +16,7 @@ const ContactMe = ({ className, size }: Props) => {
       <Icon
         iconType={IconType.Resume}
         size={size}
-        link='https://github.com/ShenyiCui/portfolio/raw/main/public/Resume-Shen-Yi-Cui-USA%20CAA%20050922.pdf'
+        link='https://github.com/ShenyiCui/portfolio/raw/main/public/Resume-Shen-Yi-Cui-USA%20CAA%20200922.pdf'
       />
     </div>
   );
