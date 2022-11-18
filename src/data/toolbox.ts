@@ -29,7 +29,7 @@ export const ExpTech: IconObject[][] = [
     { iconType: IconType.Rails },
     { iconType: IconType.Sequelize },
   ],
-  [{ iconType: IconType.NodeJs }, { iconType: IconType.ExpressJs }],
+  [{ iconType: IconType.NodeJs }, { iconType: IconType.ExpressJs }, { iconType: IconType.Recoil }, { iconType: IconType.Storybook }],
 ];
 export const FamTech: IconObject[][] = [
   [{ iconType: IconType.AwsApiGateway }, { iconType: IconType.AwsDynamoDb }, { iconType: IconType.AwsLambda }, { iconType: IconType.Ecto }],

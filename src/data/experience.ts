@@ -4,14 +4,35 @@ import { IconType } from '@components/Icon';
 
 export const experience: Event[] = [
   {
-    jobTitle: 'Full Stack Engineer',
-    location: 'Google Developer Student Club',
-    blurb: 'GDSC is a club that develops applications for non-profit organisations.',
+    jobTitle: 'Frontend Engineering Intern',
+    location: 'Dyslexia Association of Singapore',
+    blurb: 'DAS is an organisation that helps diagnose and educate dyslexic children.',
+    points: [
+      'Built an online learning platform with React and Typescript that helped dyslexic children overcome their learning difficulties.',
+      'Implemented an interactive, responsive canvas that allowed students to draw and practice words.',
+      'Streamlined staff workflow with an in-house student course management system.',
+      'Created using Recoil, React, Typescript and TailwindCSS with Storybook for unit testing.',
+    ],
+    duration: 'Aug 2022 - Current',
+    icon: PlusIcon,
+    iconBackground: 'bg-darkBlue',
+    techStackIcons: [
+      { iconType: IconType.React },
+      { iconType: IconType.Recoil },
+      { iconType: IconType.TypeScript },
+      { iconType: IconType.Tailwind },
+      { iconType: IconType.Storybook },
+    ],
+  },
+  {
+    jobTitle: 'Full Stack Engineering Intern',
+    location: 'Diabetes Singapore',
+    blurb: 'DS is an organisation that helps provide diagnosis, treatment and community to diabetes patients.',
     points: [
       'Created a new web application that overhauled Diabetes Singapore’s previous Excel-based workflow into an automated website management system that streamlined their planning.',
       'Developed relational databases with PostgreSQL and REST APIs with TypeScript and Express.',
       'Produced a responsive, interactive UI with React and Redux.',
-      'Received a Plaque from the Minister of Education in recognition of the utility of our work.',
+      'Awarded a Plaque from the Minister of Education in recognition of the utility of our work.',
     ],
     duration: 'Aug 2021 - Sep 2022',
     icon: PlusIcon,
