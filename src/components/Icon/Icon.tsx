@@ -35,6 +35,8 @@ import pytorch from '@/assets/icons/pytorch-icon.svg';
 import devpost from '@/assets/icons/devpost.svg';
 import materialui from '@/assets/icons/material-ui.svg';
 import autoit from '@/assets/icons/autoit.svg';
+import storybook from '@/assets/icons/storybook.svg';
+import recoil from '@/assets/icons/recoil.svg';
 
 export enum IconType {
   Figma = 'Figma/Design',
@@ -72,6 +74,8 @@ export enum IconType {
   DevPost = 'DevPost',
   MaterialUI = 'MaterialUI',
   AutoIt = 'AutoIt',
+  Storybook = 'Storybook',
+  Recoil = 'Recoil',
 }
 
 const IconImage = {
@@ -110,6 +114,8 @@ const IconImage = {
   DevPost: devpost,
   MaterialUI: materialui,
   AutoIt: autoit,
+  Storybook: storybook,
+  Recoil: recoil,
 };
 
 export type IconObject = {
