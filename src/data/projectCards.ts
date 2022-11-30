@@ -63,6 +63,7 @@ export const allProjects: Project[] = [
       { iconType: IconType.Figma, link: 'https://www.figma.com/file/lRvJbetOcTOr0CAhfuB5RS/Dulwich-Bookings?node-id=39%3A39' },
       { iconType: IconType.OpenNew, link: 'https://dulwich-bookings.netlify.app/' },
     ],
+    others: [{ title: 'Previous Project Iteration (HTML, CSS, JS)', link: 'https://www.ivykang.com/uiux/dcb-bookings' }],
     shields: ['https://img.shields.io/badge/-Team%20Lead-informational'],
   },
   {
