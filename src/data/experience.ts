@@ -5,6 +5,16 @@ import { IconType } from '@components/Icon';
 export const experience: Event[] = [
   {
     jobTitle: 'Frontend Engineering Intern',
+    location: 'Datature',
+    blurb: 'Datature is an AI firm that empowers anyone to build no-code Computer Vision models.',
+    points: ['Ongoing Experience, Please check back later!'],
+    duration: 'Jan 2023 - Current',
+    icon: PlusIcon,
+    iconBackground: 'bg-darkBlue',
+    techStackIcons: [{ iconType: IconType.React }, { iconType: IconType.TypeScript }],
+  },
+  {
+    jobTitle: 'Frontend Engineering Intern',
     location: 'Dyslexia Association of Singapore',
     blurb: 'DAS is an organisation that helps diagnose and educate dyslexic children.',
     points: [
