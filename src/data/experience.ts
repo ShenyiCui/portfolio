@@ -90,7 +90,7 @@ export const experience: Event[] = [
     ],
   },
   {
-    jobTitle: 'Software Engineering Intern',
+    jobTitle: 'Backend Engineering Intern',
     location: 'LittleLives',
     blurb: 'LittleLives is an education technology firm that provides student management software to schools.',
     points: [
