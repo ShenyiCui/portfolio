@@ -37,6 +37,8 @@ import materialui from '@/assets/icons/material-ui.svg';
 import autoit from '@/assets/icons/autoit.svg';
 import storybook from '@/assets/icons/storybook.svg';
 import recoil from '@/assets/icons/recoil.svg';
+import nextjs from '@/assets/icons/nextjs.svg';
+import blueprintjs from '@/assets/icons/blueprintjs.svg';
 
 export enum IconType {
   Figma = 'Figma/Design',
@@ -76,6 +78,8 @@ export enum IconType {
   AutoIt = 'AutoIt',
   Storybook = 'Storybook',
   Recoil = 'Recoil',
+  NextJs = 'NextJs',
+  BlueprintJs = 'BlueprintJs',
 }
 
 const IconImage = {
@@ -116,6 +120,8 @@ const IconImage = {
   AutoIt: autoit,
   Storybook: storybook,
   Recoil: recoil,
+  NextJs: nextjs,
+  BlueprintJs: blueprintjs,
 };
 
 export type IconObject = {
