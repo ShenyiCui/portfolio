@@ -1,4 +1,4 @@
-import Icon, { IconObject, IconType } from '@components/Icon';
+import { IconObject, IconType } from '@components/Icon';
 
 export const ExpLanguage: IconObject[][] = [
   [{ iconType: IconType.JavaScript }, { iconType: IconType.TypeScript }, { iconType: IconType.Java }, { iconType: IconType.Ruby }],
