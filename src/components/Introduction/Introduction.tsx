@@ -21,8 +21,8 @@ const Introduction = () => {
               Hi! <img className='inline w-6 mb-2' src={wave} /> I&apos;m Shen Yi, an aspiring developer.
             </h1>
             <p className='font-inter text-base font-medium mt-5 md:text-xl'>
-              I’m a passionate and inquisitive <br /> Computer Science Undergraduate with an international background that spans across
-              Asia.{' '}
+              I’m a passionate and inquisitive <br /> Computer Science Undergraduate with an international background that spans across the
+              World.{' '}
               <a className='text-darkBlue' href={Routes.aboutMe}>
                 Find out more...
               </a>

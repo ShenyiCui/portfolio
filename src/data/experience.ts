@@ -6,12 +6,21 @@ export const experience: Event[] = [
   {
     jobTitle: 'Frontend Engineering Intern',
     location: 'Datature',
-    blurb: 'Datature is an AI firm that empowers anyone to build no-code Computer Vision models.',
-    points: ['Ongoing Experience, Please check back later!'],
+    blurb: 'Datature is a company that builds no-code solutions to annotate, train, visualise, and deploy computer vision models',
+    points: [
+      'Created an interactive node-based UI to allow users to design customisable access control flow with React-Flow',
+      'Spearheaded the migration and implementation of a new Authentication System on Auth0',
+      'Installed CDP code with Segment, Mixpanel and Sentry to accurately track activity for better product insights',
+    ],
     duration: 'Jan 2023 - Current',
     icon: PlusIcon,
     iconBackground: 'bg-darkBlue',
-    techStackIcons: [{ iconType: IconType.React }, { iconType: IconType.TypeScript }],
+    techStackIcons: [
+      { iconType: IconType.NextJs },
+      { iconType: IconType.React },
+      { iconType: IconType.TypeScript },
+      { iconType: IconType.BlueprintJs },
+    ],
   },
   {
     jobTitle: 'Frontend Engineering Intern',
@@ -94,6 +103,7 @@ export const experience: Event[] = [
       { iconType: IconType.React },
       { iconType: IconType.Redux },
       { iconType: IconType.TypeScript },
+      { iconType: IconType.BlueprintJs },
       { iconType: IconType.Elixir },
       { iconType: IconType.Erlang },
       { iconType: IconType.Ecto },
