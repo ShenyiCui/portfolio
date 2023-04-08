@@ -22,7 +22,7 @@ const Introduction = () => {
             </h1>
             <p className='font-inter text-base font-medium mt-5 md:text-xl'>
               I’m a passionate and inquisitive <br /> Computer Science Undergraduate with an international background that spans across the
-              World.{' '}
+              world.{' '}
               <a className='text-darkBlue' href={Routes.aboutMe}>
                 Find out more...
               </a>

@@ -39,6 +39,8 @@ import storybook from '@/assets/icons/storybook.svg';
 import recoil from '@/assets/icons/recoil.svg';
 import nextjs from '@/assets/icons/nextjs.svg';
 import blueprintjs from '@/assets/icons/blueprintjs.svg';
+import youtube from '@/assets/icons/youtube.svg';
+import googleCloud from '@/assets/icons/googleCloud.svg';
 
 export enum IconType {
   Figma = 'Figma/Design',
@@ -80,6 +82,8 @@ export enum IconType {
   Recoil = 'Recoil',
   NextJs = 'NextJs',
   BlueprintJs = 'BlueprintJs',
+  Youtube = 'Demo',
+  GoogleCloud = 'Google Cloud',
 }
 
 const IconImage = {
@@ -122,6 +126,8 @@ const IconImage = {
   Recoil: recoil,
   NextJs: nextjs,
   BlueprintJs: blueprintjs,
+  Demo: youtube,
+  'Google Cloud': googleCloud,
 };
 
 export type IconObject = {
@@ -129,15 +135,16 @@ export type IconObject = {
   link?: string;
   vSpace?: string;
   size?: string;
+  className?: string;
 };
 
 const openLink = (link: string) => {
   window.open(link, '_blank');
 };
 
-const Icon = ({ iconType, link, vSpace, size = 'w-[32px]' }: IconObject) => {
+const Icon = ({ iconType, link, vSpace, size = 'w-[32px]', className }: IconObject) => {
   return (
-    <div onClick={() => link && openLink(link)} className={`${size} grid grid-cols-1 h-5 group ${link && 'cursor-pointer'}`}>
+    <div onClick={() => link && openLink(link)} className={`${size} grid grid-cols-1 h-5 group ${link && 'cursor-pointer'} ${className}`}>
       <div className='flex justify-center'>
         <img src={IconImage[iconType]} className={`m-0 ${size} `} />
       </div>

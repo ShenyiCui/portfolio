@@ -58,7 +58,7 @@ const ProjectCard = (props: Project) => {
                 return (
                   <dd key={getKey()} className='mt-1 flex space-x-3 mb-5'>
                     {techStackArr.map(icon => (
-                      <Icon iconType={icon.iconType} key={getKey()} />
+                      <Icon className='mb-2' iconType={icon.iconType} key={getKey()} />
                     ))}
                   </dd>
                 );

@@ -5,8 +5,42 @@ import dulwichBookingImg from '@/assets/images/dulwich-bookings.png';
 import recyclopsImg from '@/assets/images/recyclops.png';
 import issueTracker from '@/assets/images/issue-tracker.png';
 import hireHer from '@/assets/images/HireHer.png';
+import ecoQuestImg from '@/assets/images/EcoQuestImg.png';
 
 export const allProjects: Project[] = [
+  {
+    title: 'ECOQUEST',
+    img: ecoQuestImg,
+    duration: 'MAR 2023',
+    description:
+      'EcoQuest is a mobile app designed to engage users in environmental conservation for the Google Solutions Hackathon 2023. It uses machine learning for object detection to validate user submissions, allowing users to earn points for completing sustainability challenges.',
+    techStack: [
+      [
+        { iconType: IconType.Ionic },
+        { iconType: IconType.React },
+        { iconType: IconType.Redux },
+        { iconType: IconType.TypeScript },
+        { iconType: IconType.Tailwind },
+        { iconType: IconType.Python },
+        { iconType: IconType.TensorFlow },
+      ],
+      [
+        { iconType: IconType.GoogleCloud },
+        { iconType: IconType.Sequelize },
+        { iconType: IconType.PostgreSql },
+        { iconType: IconType.ExpressJs },
+        { iconType: IconType.NodeJs },
+      ],
+    ],
+    links: [
+      { iconType: IconType.Github, link: 'https://github.com/sus-tainability' },
+      { iconType: IconType.Figma, link: 'https://www.figma.com/file/RElz1keXSeEx1dNBfV8eJv/SUS-App?node-id=1-4&t=ok8L4wSiVUBHcHc6-0' },
+      { iconType: IconType.Youtube, link: 'https://www.youtube.com/watch?v=a2bNogfSkVE' },
+      { iconType: IconType.OpenNew, link: 'https://sus-tainability.netlify.app/story' },
+    ],
+    others: [{ title: 'About Google Solutions 2023', link: 'https://github.com/sus-tainability' }],
+    shields: ['https://img.shields.io/badge/-International%20%F0%9F%8C%8E-informational'],
+  },
   {
     title: 'RECYCLOPS',
     img: recyclopsImg,
@@ -30,6 +64,7 @@ export const allProjects: Project[] = [
       { iconType: IconType.Github, link: 'https://github.com/Recyclops-LifeHack-2022-Singapore' },
       { iconType: IconType.Figma, link: 'https://www.figma.com/file/Von8ACBD5yA7R6gY5gBqIv/Recyclops?node-id=0%3A1' },
       { iconType: IconType.DevPost, link: 'https://devpost.com/software/recyclops-6lyh30' },
+      { iconType: IconType.Youtube, link: 'https://www.youtube.com/watch?v=pyXI4r7pX9s' },
       { iconType: IconType.OpenNew, link: 'https://recyclops.netlify.app/' },
     ],
     others: [{ title: 'About LifeHack', link: 'https://lifehack-2022.devpost.com/' }],
