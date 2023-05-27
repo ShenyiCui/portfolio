@@ -39,7 +39,11 @@ export const allProjects: Project[] = [
       { iconType: IconType.OpenNew, link: 'https://sus-tainability.netlify.app/story' },
     ],
     others: [{ title: 'About Google Solutions 2023', link: 'https://github.com/sus-tainability' }],
-    shields: ['https://img.shields.io/badge/-International%20%F0%9F%8C%8E-informational'],
+    shields: [
+      'https://img.shields.io/badge/-International%20%F0%9F%8C%8E-informational',
+      'https://img.shields.io/badge/-Winner%20%F0%9F%8F%86-yellow',
+      'https://img.shields.io/badge/-Top%20100%20%F0%9F%8F%85-success',
+    ],
   },
   {
     title: 'RECYCLOPS',
