@@ -7,11 +7,16 @@ export const experience: Event[] = [
     jobTitle: 'Frontend Engineering Intern',
     location: 'TikTok',
     blurb: 'TikTok is a social media platform that allows users to create and share short videos.',
-    points: ['This is an ongoing internship, check back soon!'],
-    duration: 'May 2023 - Current',
+    points: [
+      'Collaborated on revamp of TikTok’s moderation page, leveraging React, TypeScript with SASS and Go, to create pixel-perfect reusable components resulting in a 50% improvement in overall user satisfaction.',
+      'Worked with Quality Assurance and Product Managers to conceptualize and deliver a solo feature, utilizing React with Go, introducing an alert system for handling incorrect punishments, resulting in 90% reduction of issue tickets – understanding the product and software development life cycle.',
+      'Delivered informative presentations on complex technical topics, including React internals (renderer), bundlers (Webpack, Rollup), and modern state management, showcasing in-depth knowledge and expertise in these areas.',
+      'Mitigated technical debt by incrementally refactoring crucial parts of codebase. Adopted best practices to build modern, and reusable components, resulting in a significant enhancement in code quality and maintainability.',
+    ],
+    duration: 'May 2023 - Aug 2023',
     icon: PlusIcon,
     iconBackground: 'bg-darkBlue',
-    techStackIcons: [{ iconType: IconType.React }, { iconType: IconType.TypeScript }],
+    techStackIcons: [{ iconType: IconType.React }, { iconType: IconType.TypeScript }, { iconType: IconType.Go }],
   },
   {
     jobTitle: 'Frontend Engineering Intern',
@@ -25,7 +30,7 @@ export const experience: Event[] = [
       "Revamped the sidebar on Datature's site by building a new collapsible design from scratch using React.",
       'Developed a new login page with Auth0 authentication to improve user security and access control.',
     ],
-    duration: 'Jan 2023 - April 2023',
+    duration: 'Jan 2023 - Apr 2023',
     icon: PlusIcon,
     iconBackground: 'bg-darkBlue',
     techStackIcons: [
@@ -45,7 +50,7 @@ export const experience: Event[] = [
       'Streamlined staff workflow with an in-house student course management system.',
       'Created using Recoil, React, Typescript and TailwindCSS with Storybook for unit testing.',
     ],
-    duration: 'Aug 2022 - Current',
+    duration: 'Aug 2022 - Aug 2023',
     icon: PlusIcon,
     iconBackground: 'bg-darkBlue',
     techStackIcons: [

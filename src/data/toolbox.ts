@@ -1,7 +1,13 @@
 import { IconObject, IconType } from '@components/Icon';
 
 export const ExpLanguage: IconObject[][] = [
-  [{ iconType: IconType.JavaScript }, { iconType: IconType.TypeScript }, { iconType: IconType.Java }, { iconType: IconType.Ruby }],
+  [
+    { iconType: IconType.JavaScript },
+    { iconType: IconType.TypeScript },
+    { iconType: IconType.Java },
+    { iconType: IconType.Ruby },
+    { iconType: IconType.Go },
+  ],
 ];
 export const FamLanguage: IconObject[][] = [
   [

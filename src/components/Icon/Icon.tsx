@@ -41,6 +41,7 @@ import nextjs from '@/assets/icons/nextjs.svg';
 import blueprintjs from '@/assets/icons/blueprintjs.svg';
 import youtube from '@/assets/icons/youtube.svg';
 import googleCloud from '@/assets/icons/googleCloud.svg';
+import go from '@/assets/icons/go.svg';
 
 export enum IconType {
   Figma = 'Figma/Design',
@@ -84,6 +85,7 @@ export enum IconType {
   BlueprintJs = 'BlueprintJs',
   Youtube = 'Demo',
   GoogleCloud = 'Google Cloud',
+  Go = 'Go',
 }
 
 const IconImage = {
@@ -128,6 +130,7 @@ const IconImage = {
   BlueprintJs: blueprintjs,
   Demo: youtube,
   'Google Cloud': googleCloud,
+  Go: go,
 };
 
 export type IconObject = {
