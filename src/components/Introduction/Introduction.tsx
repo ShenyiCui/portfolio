@@ -17,15 +17,23 @@ const Introduction = () => {
         <div className='md:hidden flex w-full'>
           <button
             onClick={() => setActiveTab('intro')}
-            className={`flex-1 md:py-3 font-montserrat text-base font-bold text-mediumBlue transition-colors justify-center items-center flex 
-              ${activeTab === 'intro' ? 'text-darkBlue border-b-2 md:border-b-0 md:border-r-2 border-darkBlue' : 'border-transparent'}`}
+            className={`flex-1 md:py-3 font-montserrat text-base font-bold transition-colors justify-center items-center flex 
+              ${
+                activeTab === 'intro'
+                  ? 'text-darkBlue border-b-2 md:border-b-0 md:border-r-2 border-darkBlue'
+                  : 'border-transparent text-mediumBlue'
+              }`}
           >
             <UserCircleIcon className='w-6 h-6 mr-1' /> Introduction
           </button>
           <button
             onClick={() => setActiveTab('awards')}
-            className={`flex-1 md:py-3 font-montserrat text-base font-bold text-mediumBlue transition-colors flex justify-center items-center
-              ${activeTab === 'awards' ? 'text-darkBlue border-b-2 md:border-b-0 md:border-r-2 border-darkBlue' : 'border-transparent'}`}
+            className={`flex-1 md:py-3 font-montserrat text-base font-bold transition-colors flex justify-center items-center
+              ${
+                activeTab === 'awards'
+                  ? 'text-darkBlue border-b-2 md:border-b-0 md:border-r-2 border-darkBlue'
+                  : 'border-transparent text-mediumBlue'
+              }`}
           >
             <TrophyIcon className='w-5 h-5 mr-1' /> Achievements
           </button>
@@ -95,15 +103,23 @@ const Introduction = () => {
         <div className='md:flex md:flex-col md:w-1/5 md:mb-0 hidden'>
           <button
             onClick={() => setActiveTab('intro')}
-            className={`flex-1 md:py-3 font-montserrat text-base font-bold text-mediumBlue transition-colors flex items-center justify-center
-              ${activeTab === 'intro' ? 'text-darkBlue border-b-2 md:border-b-0 md:border-r-2 border-darkBlue' : 'border-transparent'}`}
+            className={`flex-1 md:py-3 font-montserrat text-base font-bold transition-colors flex items-center justify-center
+              ${
+                activeTab === 'intro'
+                  ? 'text-darkBlue border-b-2 md:border-b-0 md:border-r-2 border-darkBlue'
+                  : 'border-transparent text-mediumBlue'
+              }`}
           >
             <UserCircleIcon className='w-7 h-7 mr-1' /> Introduction
           </button>
           <button
             onClick={() => setActiveTab('awards')}
-            className={`flex-1 md:py-3 font-montserrat text-base font-bold text-mediumBlue transition-colors flex items-center justify-center
-              ${activeTab === 'awards' ? 'text-darkBlue border-b-2 md:border-b-0 md:border-r-2 border-darkBlue' : 'border-transparent'}`}
+            className={`flex-1 md:py-3 font-montserrat text-base font-bold transition-colors flex items-center justify-center
+              ${
+                activeTab === 'awards'
+                  ? 'text-darkBlue border-b-2 md:border-b-0 md:border-r-2 border-darkBlue'
+                  : 'border-transparent text-mediumBlue'
+              }`}
           >
             <TrophyIcon className='w-6 h-6 mr-1' /> Achievements
           </button>
