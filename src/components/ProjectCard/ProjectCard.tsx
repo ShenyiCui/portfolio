@@ -26,7 +26,7 @@ export type Project = {
 
 const ProjectCard = (props: Project) => {
   return (
-    <div className='overflow-hidden bg-white my-5 w-full flex justify-center'>
+    <div className='overflow-hidden bg-white w-full flex justify-center'>
       <div className='max-w-3xl border rounded-lg shadow-lg'>
         {/* Header */}
         <div className='px-4 py-5 sm:px-6'>

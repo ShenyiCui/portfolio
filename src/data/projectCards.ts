@@ -79,33 +79,6 @@ export const allProjects: Project[] = [
     ],
   },
   {
-    title: 'DULWICH BOOKINGS',
-    img: dulwichBookingImg,
-    duration: 'MAY 2022 - SEP 2022',
-    description:
-      'Dulwich is a School with many branches worldwide, teaching students from kindergarten to high school. There are many valuable and highly contested resources around all Dulwich schools with no proper solution to manage them.' +
-      '\nDulwich Bookings is the 3rd iteration of solutions that allows staff to dynamically create resources for students and teachers to book.',
-    techStack: [
-      [
-        { iconType: IconType.MaterialUI },
-        { iconType: IconType.React },
-        { iconType: IconType.Redux },
-        { iconType: IconType.TypeScript },
-        { iconType: IconType.Tailwind },
-        { iconType: IconType.Sequelize },
-        { iconType: IconType.PostgreSql },
-      ],
-      [{ iconType: IconType.NodeJs }, { iconType: IconType.ExpressJs }],
-    ],
-    links: [
-      { iconType: IconType.Github, link: 'https://github.com/Dulwich-Bookings' },
-      { iconType: IconType.Figma, link: 'https://www.figma.com/file/lRvJbetOcTOr0CAhfuB5RS/Dulwich-Bookings?node-id=39%3A39' },
-      { iconType: IconType.OpenNew, link: 'https://dulwich-bookings.netlify.app/' },
-    ],
-    others: [{ title: 'Previous Project Iteration (HTML, CSS, JS)', link: 'https://www.ivykang.com/uiux/dcb-bookings' }],
-    shields: ['https://img.shields.io/badge/-Team%20Lead-informational'],
-  },
-  {
     title: 'SCOOT - REIMAGINED',
     img: 'https://user-images.githubusercontent.com/29945147/188915459-81a963ea-9417-4a74-a299-81dc6b401344.png',
     duration: 'AUG 2022 - SEP 2022',
@@ -135,6 +108,34 @@ export const allProjects: Project[] = [
       'https://img.shields.io/badge/-Winner%20%F0%9F%8F%86-yellow',
       'https://img.shields.io/badge/-1st%20Place%20%F0%9F%A5%87%20-Success',
     ],
+  },
+
+  {
+    title: 'DULWICH BOOKINGS',
+    img: dulwichBookingImg,
+    duration: 'MAY 2022 - SEP 2022',
+    description:
+      'Dulwich is a School with many branches worldwide, teaching students from kindergarten to high school. There are many valuable and highly contested resources around all Dulwich schools with no proper solution to manage them.' +
+      '\nDulwich Bookings is the 3rd iteration of solutions that allows staff to dynamically create resources for students and teachers to book.',
+    techStack: [
+      [
+        { iconType: IconType.MaterialUI },
+        { iconType: IconType.React },
+        { iconType: IconType.Redux },
+        { iconType: IconType.TypeScript },
+        { iconType: IconType.Tailwind },
+        { iconType: IconType.Sequelize },
+        { iconType: IconType.PostgreSql },
+      ],
+      [{ iconType: IconType.NodeJs }, { iconType: IconType.ExpressJs }],
+    ],
+    links: [
+      { iconType: IconType.Github, link: 'https://github.com/Dulwich-Bookings' },
+      { iconType: IconType.Figma, link: 'https://www.figma.com/file/lRvJbetOcTOr0CAhfuB5RS/Dulwich-Bookings?node-id=39%3A39' },
+      { iconType: IconType.OpenNew, link: 'https://dulwich-bookings.netlify.app/' },
+    ],
+    others: [{ title: 'Previous Project Iteration (HTML, CSS, JS)', link: 'https://www.ivykang.com/uiux/dcb-bookings' }],
+    shields: ['https://img.shields.io/badge/-Team%20Lead-informational'],
   },
 ];
 

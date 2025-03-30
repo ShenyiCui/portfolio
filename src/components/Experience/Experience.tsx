@@ -1,15 +1,17 @@
-import React, { SVGProps } from 'react';
+import React from 'react';
 
 import getKey from '@/utilities/keyGenerator';
 import Icon, { IconObject } from '@components/Icon';
+import { MapPinIcon } from '@heroicons/react/24/outline';
 
 export type Event = {
   jobTitle: string;
   location: string;
   blurb: string;
+  country: string;
   points: string[];
   duration: string;
-  icon: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+  icon: React.ForwardRefExoticComponent<React.SVGProps<SVGSVGElement> & React.RefAttributes<SVGSVGElement>>;
   iconBackground: string;
   techStackIcons: IconObject[];
 };
@@ -49,7 +51,11 @@ const Experience = ({ event, eventIdx, eventLength }: Prop) => {
                   <h1 className='font-medium font-montserrat text-xl'>
                     {event.jobTitle} <label className='text-darkBlue'>@{event.location}</label>
                   </h1>
-                  <h1 className='font-bold font-montserrat text-mediumBlue text-xl'>{event.duration}</h1>
+                  <h1 className='font-bold font-montserrat text-mediumBlue text-xl flex'>
+                    {event.duration}
+                    <MapPinIcon className='w-5 ml-2 text-darkBlue' />
+                    <label className='text-darkBlue'>{event.country}</label>
+                  </h1>
                   <p className='font-inter text-base'>{event.blurb}</p>
                   <ul className='list-disc pl-5 mt-4 md:mt-2'>
                     {event.points.map(point => (
@@ -58,12 +64,17 @@ const Experience = ({ event, eventIdx, eventLength }: Prop) => {
                       </li>
                     ))}
                   </ul>
-                  <h1 className='font-montserrat font-semibold text-xl mb-1'>Tech Stack</h1>
-                  <div className='flex space-x-4 mb-4'>
-                    {event.techStackIcons.map(icon => (
-                      <Icon key={getKey()} iconType={icon.iconType} />
-                    ))}
-                  </div>
+
+                  {event.techStackIcons.length > 0 && (
+                    <>
+                      <h1 className='font-montserrat font-semibold text-xl mb-1'>Tech Stack</h1>
+                      <div className='flex space-x-4 mb-4'>
+                        {event.techStackIcons.map(icon => (
+                          <Icon key={getKey()} iconType={icon.iconType} />
+                        ))}
+                      </div>
+                    </>
+                  )}
                 </div>
               </li>
             </ul>

@@ -1,14 +1,15 @@
-import React, { SVGProps } from 'react';
+import React from 'react';
 
 type Props = {
   onClick?: () => void;
+  className?: string;
   title: string;
-  icon: (props: SVGProps<SVGSVGElement>) => JSX.Element;
+  icon: React.ForwardRefExoticComponent<React.SVGProps<SVGSVGElement> & React.RefAttributes<SVGSVGElement>>;
 };
 
 const DividerWithButton = (props: Props) => {
   return (
-    <div className='relative'>
+    <div className={`relative ${props.className}`}>
       <div className='absolute inset-0 flex items-center' aria-hidden='true'>
         <div className='w-full border-t border-gray-300' />
       </div>

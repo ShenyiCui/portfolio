@@ -2,22 +2,23 @@ import { IconObject, IconType } from '@components/Icon';
 
 export const ExpLanguage: IconObject[][] = [
   [
+    { iconType: IconType.Go },
+    { iconType: IconType.Java },
+    { iconType: IconType.Python },
     { iconType: IconType.JavaScript },
     { iconType: IconType.TypeScript },
-    { iconType: IconType.Java },
-    { iconType: IconType.Ruby },
-    { iconType: IconType.Go },
   ],
+  [{ iconType: IconType.Thrift }],
 ];
 export const FamLanguage: IconObject[][] = [
   [
-    { iconType: IconType.Python },
     { iconType: IconType.Swift },
     { iconType: IconType.R },
     { iconType: IconType.Elixir },
     { iconType: IconType.Erlang },
+    { iconType: IconType.AutoIt },
   ],
-  [{ iconType: IconType.AutoIt }],
+  [{ iconType: IconType.Ruby }],
 ];
 
 export const ExpTech: IconObject[][] = [
@@ -30,10 +31,10 @@ export const ExpTech: IconObject[][] = [
   ],
   [
     { iconType: IconType.PostgreSql },
-    { iconType: IconType.JQuery },
+    { iconType: IconType.MySql },
+    { iconType: IconType.Kafka },
+    { iconType: IconType.Grpc },
     { iconType: IconType.Tailwind },
-    { iconType: IconType.Git },
-    { iconType: IconType.Rails },
   ],
   [
     { iconType: IconType.MaterialUI },
@@ -42,7 +43,7 @@ export const ExpTech: IconObject[][] = [
     { iconType: IconType.ExpressJs },
     { iconType: IconType.Recoil },
   ],
-  [{ iconType: IconType.Storybook }],
+  [{ iconType: IconType.Storybook }, { iconType: IconType.Rails }, { iconType: IconType.JQuery }, { iconType: IconType.Git }],
 ];
 export const FamTech: IconObject[][] = [
   [{ iconType: IconType.AwsApiGateway }, { iconType: IconType.AwsDynamoDb }, { iconType: IconType.AwsLambda }, { iconType: IconType.Ecto }],

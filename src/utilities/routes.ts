@@ -1,6 +1,7 @@
 const Routes = {
   home: '/',
   aboutMe: '/aboutMe',
+  blog: '/blog',
   notFound: '/404',
 };
 

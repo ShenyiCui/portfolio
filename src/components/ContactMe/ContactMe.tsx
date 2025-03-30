@@ -13,7 +13,7 @@ const ContactMe = ({ className, size }: Props) => {
       <Icon iconType={IconType.LinkedIn} size={size} link='https://www.linkedin.com/in/shenyi-cui-4b9b95211/' />
       <Icon iconType={IconType.Github} size={size} link='https://github.com/ShenyiCui' />
       <Icon iconType={IconType.Email} size={size} link='mailto:shenyicui@outlook.com' />
-      <Icon iconType={IconType.Resume} size={size} link='https://github.com/ShenyiCui/portfolio/raw/main/public/Resume.pdf' />
+      <Icon iconType={IconType.Resume} size={size} link='./Resume.pdf' />
     </div>
   );
 };

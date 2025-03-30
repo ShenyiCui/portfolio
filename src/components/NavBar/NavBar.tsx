@@ -32,6 +32,15 @@ const NavBar = () => {
             >
               About Me
             </NavLink>
+            <NavLink
+              exact
+              to={Routes.blog}
+              className='font-montserrat font-semibold text-base md:text-xl'
+              activeClassName='underline underline-offset-8 decoration-[2px] decoration-darkBlue md:decoration-[3px]'
+              href={Routes.blog}
+            >
+              Blog
+            </NavLink>
           </div>
         </div>
       </nav>

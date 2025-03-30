@@ -42,6 +42,10 @@ import blueprintjs from '@/assets/icons/blueprintjs.svg';
 import youtube from '@/assets/icons/youtube.svg';
 import googleCloud from '@/assets/icons/googleCloud.svg';
 import go from '@/assets/icons/go.svg';
+import mySql from '@/assets/icons/mysql.svg';
+import kafka from '@/assets/icons/kafka.svg';
+import grpc from '@/assets/icons/grpc.svg';
+import thrift from '@/assets/icons/thrift.svg';
 
 export enum IconType {
   Figma = 'Figma/Design',
@@ -86,6 +90,10 @@ export enum IconType {
   Youtube = 'Demo',
   GoogleCloud = 'Google Cloud',
   Go = 'Go',
+  MySql = 'MySql',
+  Kafka = 'Kafka',
+  Grpc = 'gRPC',
+  Thrift = 'Thrift',
 }
 
 const IconImage = {
@@ -131,6 +139,10 @@ const IconImage = {
   Demo: youtube,
   'Google Cloud': googleCloud,
   Go: go,
+  MySql: mySql,
+  Kafka: kafka,
+  gRPC: grpc,
+  Thrift: thrift,
 };
 
 export type IconObject = {

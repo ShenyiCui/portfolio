@@ -37,7 +37,7 @@ const Toolbox = () => {
             <dd className='mt-1 text-sm text-gray-900'>{TechStackIcons(FamLanguage)}</dd>
           </div>
           <div className='sm:col-span-2'>
-            <dt className='text-lg font-montserrat font-bold text-gray-900'>Technologies</dt>
+            <dt className='text-lg font-montserrat font-bold text-gray-900'>Technologies / Frameworks</dt>
           </div>
           <div className='sm:col-span-1 mb-1'>
             <dt className='text-sm font-medium text-gray-500'>Experienced</dt>
