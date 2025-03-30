@@ -113,7 +113,7 @@ const Introduction = () => {
       {/* Scroll Indicator (kept as provided) */}
       <div
         className={`-rotate-90 absolute ${
-          activeTab === 'intro' ? 'top-[650px] md:top-[550px]' : 'top-[1400px] md:top-[810px]'
+          activeTab === 'intro' ? 'top-[670px] md:top-[550px]' : 'top-[1420px] md:top-[810px]'
         } -left-32  md:-left-[175px]`}
       >
         <p className='font-montserrat text-base font-bold text-mediumBlue ml-[200px] md:ml-[250px]'>scroll down!</p>

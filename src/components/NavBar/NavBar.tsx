@@ -13,7 +13,7 @@ const NavBar = () => {
               Shen Yi Cui
             </NavLink>
           </div>
-          <div className='ml-10 space-x-3 md:space-x-6'>
+          <div className='flex ml-2 space-x-1.5 md:space-x-6'>
             <NavLink
               exact
               to={Routes.home}
