@@ -4,6 +4,7 @@ import NavBar from '@/components/NavBar';
 import Footer from '@/components/Footer';
 
 import { blogPosts } from '@/data/blogposts';
+import { useHistory } from 'react-router-dom';
 
 // Define the available tags for filtering (include "All" for no filter)
 const allTags = ['All', 'Tech4Good', 'Education', 'Community', 'Internship', 'Technical', 'Corporate'];
@@ -11,6 +12,7 @@ const allTags = ['All', 'Tech4Good', 'Education', 'Community', 'Internship', 'Te
 export default function BlogPage() {
   // Maintain an array of selected tags; default is "All"
   const [selectedTags, setSelectedTags] = useState(['All']);
+  const history = useHistory();
 
   // Handle toggling tags in the filter
   const handleTagClick = (tag: string) => {
@@ -43,6 +45,10 @@ export default function BlogPage() {
     ? blogPosts
     : blogPosts.filter(post => selectedTags.every(tag => post.tags.includes(tag)));
 
+  const handlePageNav = (route: string) => {
+    history.push(route);
+  };
+
   return (
     <>
       <NavBar />
@@ -70,7 +76,11 @@ export default function BlogPage() {
           {/* Blog Posts Grid */}
           <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
             {filteredPosts.map(post => (
-              <div key={post.id} className='divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow'>
+              <div
+                onClick={() => handlePageNav(post.route)}
+                key={post.id}
+                className='divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow cursor-pointer'
+              >
                 {/* Post Image */}
                 <img className='w-full h-36 md:h-60 object-cover' src={post.imageUrl} alt={post.title} />
 
