@@ -94,6 +94,12 @@ export default function BlogPage() {
               </div>
             ))}
           </div>
+
+          {filteredPosts.length === 0 && (
+            <div className='flex w-full justify-center text-gray-500 font-montserrat text-lg font-bold'>
+              No posts found for selected tags.
+            </div>
+          )}
         </div>
       </div>
       {/* FOOTER */}
