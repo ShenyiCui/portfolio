@@ -53,8 +53,12 @@ const Experience = ({ event, eventIdx, eventLength }: Prop) => {
                   </h1>
                   <h1 className='font-bold font-montserrat text-mediumBlue text-xl flex'>
                     {event.duration}
-                    <MapPinIcon className='w-5 ml-2 text-darkBlue' />
-                    <label className='text-darkBlue'>{event.country}</label>
+                    <MapPinIcon className='hidden md:block w-5 ml-2 text-darkBlue' />
+                    <label className='text-darkBlue hidden md:block'>{event.country}</label>
+                  </h1>
+                  <h1 className='font-bold font-montserrat text-mediumBlue text-xl flex'>
+                    <MapPinIcon className='md:hidden w-5 text-darkBlue' />
+                    <label className='text-darkBlue md:hidden'>{event.country}</label>
                   </h1>
                   <p className='font-inter text-base'>{event.blurb}</p>
                   <ul className='list-disc pl-5 mt-4 md:mt-2'>
