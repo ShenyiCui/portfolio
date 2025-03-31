@@ -1,7 +1,7 @@
 import sightwordsPhoto from '@/assets/images/sightwords.webp';
 import siewdaiPhoto from '@/assets/images/siewdai.jpeg';
-import configbaseduiPhoto from '@/assets/images/configbasedui.gif';
-import apireplayPhoto from '@/assets/images/apireplay.png';
+// import configbaseduiPhoto from '@/assets/images/configbasedui.gif';
+// import apireplayPhoto from '@/assets/images/apireplay.png';
 import Routes from '@/utilities/routes';
 
 export const blogPosts = [
