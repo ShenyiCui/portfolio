@@ -1,7 +1,9 @@
 import React from 'react';
+
 import NavBar from '@/components/NavBar';
 import logoImg from '@/assets/images/ds-logo.png';
 import teamImg from '@/assets/images/ds-team.png';
+import ministerImg from '@/assets/images/siewdai.jpeg'; // <-- new image
 import productImg1 from '@/assets/images/ds-product1.png';
 import productImg2 from '@/assets/images/ds-product2.png';
 import productImg3 from '@/assets/images/ds-product3.png';
@@ -83,7 +85,7 @@ export default function ArticlePage() {
             management features will empower DS to track and visualize critical data seamlessly.
           </p>
 
-          {/* Product Gallery: 3 Columns */}
+          {/* Product Gallery */}
           <div className='mt-10 grid grid-cols-1 md:grid-cols-3 gap-6'>
             <div className='break-inside-avoid'>
               <img src={productImg1} alt='Siew-Dai Interface 1' className='w-full rounded-lg shadow' />
@@ -93,6 +95,19 @@ export default function ArticlePage() {
             </div>
             <div className='break-inside-avoid'>
               <img src={productImg3} alt='Siew-Dai Interface 3' className='w-full rounded-lg shadow' />
+            </div>
+          </div>
+
+          {/* Minister Recognition */}
+          <div className='mt-12'>
+            <h2 className='font-montserrat text-3xl font-bold text-mediumBlue mb-4'>Recognition from Minister of Health</h2>
+            <p className='font-inter text-lg text-gray-700 mb-4'>
+              Our efforts were recognised by Mr CHAN Chun Sing, then Minister for Health, who personally acknowledged our contribution
+              during a Diabetes Singapore event. The recognition is a testament to the impact that thoughtful, community-driven technology
+              can have in public health.
+            </p>
+            <div className='flex justify-center'>
+              <img src={ministerImg} alt='Minister CHAN Chun Sing with DSC Team' className='w-full max-w-2xl rounded-lg shadow' />
             </div>
           </div>
 
