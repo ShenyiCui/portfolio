@@ -46,6 +46,8 @@ import mySql from '@/assets/icons/mysql.svg';
 import kafka from '@/assets/icons/kafka.svg';
 import grpc from '@/assets/icons/grpc.svg';
 import thrift from '@/assets/icons/thrift.svg';
+import nestjs from '@/assets/icons/nestjs.svg';
+import prisma from '@/assets/icons/prisma.svg';
 
 export enum IconType {
   Figma = 'Figma/Design',
@@ -94,6 +96,8 @@ export enum IconType {
   Kafka = 'Kafka',
   Grpc = 'gRPC',
   Thrift = 'Thrift',
+  NestJs = 'NestJs',
+  Prisma = 'Prisma',
 }
 
 const IconImage = {
@@ -143,6 +147,8 @@ const IconImage = {
   Kafka: kafka,
   gRPC: grpc,
   Thrift: thrift,
+  Prisma: prisma,
+  NestJs: nestjs,
 };
 
 export type IconObject = {

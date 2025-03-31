@@ -6,12 +6,40 @@ import productImg1 from '@/assets/images/ds-product1.png';
 import productImg2 from '@/assets/images/ds-product2.png';
 import productImg3 from '@/assets/images/ds-product3.png';
 import Footer from '@/components/Footer';
+import getKey from '@/utilities/keyGenerator';
+import Icon, { IconType } from '@/components/Icon';
+
+const techStack = [
+  [
+    { iconType: IconType.React },
+    { iconType: IconType.TypeScript },
+    { iconType: IconType.Tailwind },
+    { iconType: IconType.PostgreSql },
+    { iconType: IconType.NodeJs },
+    { iconType: IconType.Sequelize },
+    { iconType: IconType.ExpressJs },
+  ],
+];
 
 export default function ArticlePage() {
   return (
     <>
       <NavBar />
       <div className='max-w-7xl mx-auto px-5 md:px-12 py-10 space-y-16'>
+        {/* Tech Stack */}
+        <div className='sm:col-span-1'>
+          <dt className='text-sm font-medium text-gray-700'>Tech Stack</dt>
+          {techStack.map(techStackArr => {
+            return (
+              <dd key={getKey()} className='flex space-x-3'>
+                {techStackArr.map(icon => (
+                  <Icon iconType={icon.iconType} key={getKey()} />
+                ))}
+              </dd>
+            );
+          })}
+        </div>
+
         {/* Hero Section */}
         <h1 className='font-montserrat text-4xl font-bold text-darkBlue mb-4'>Project Siew Dai</h1>
         <section className='flex flex-col md:flex-row items-center gap-8'>

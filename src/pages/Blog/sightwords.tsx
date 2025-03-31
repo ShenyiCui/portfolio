@@ -9,12 +9,39 @@ import userTestingImg1 from '@/assets/images/sightwords.webp';
 import userTestingImg2 from '@/assets/images/user-testing2.png';
 import teamImg from '@/assets/images/team-sight-words.png';
 import Footer from '@/components/Footer';
+import Icon, { IconType } from '@/components/Icon';
+import getKey from '@/utilities/keyGenerator';
+
+const techStack = [
+  [
+    { iconType: IconType.React },
+    { iconType: IconType.TypeScript },
+    { iconType: IconType.Tailwind },
+    { iconType: IconType.PostgreSql },
+    { iconType: IconType.NodeJs },
+    { iconType: IconType.Prisma },
+    { iconType: IconType.NestJs },
+  ],
+];
 
 export default function ProjectSightWordsArticle() {
   return (
     <>
       <NavBar />
       <div className='max-w-7xl mx-auto px-5 md:px-12 py-10 space-y-16'>
+        {/* Tech Stack */}
+        <div className='sm:col-span-1'>
+          <dt className='text-sm font-medium text-gray-700'>Tech Stack</dt>
+          {techStack.map(techStackArr => {
+            return (
+              <dd key={getKey()} className='flex space-x-3'>
+                {techStackArr.map(icon => (
+                  <Icon iconType={icon.iconType} key={getKey()} />
+                ))}
+              </dd>
+            );
+          })}
+        </div>
         {/* Hero Section */}
         <section className='text-center'>
           <div className='flex justify-center mb-6'>
